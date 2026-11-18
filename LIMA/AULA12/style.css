@@ -1,0 +1,287 @@
+
+/* CONFIGURAÇÕES GERAIS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #10101c;
+    color: #ffffff;
+}
+
+/* CABEÇALHO */
+.cabecalho {
+    background-color: #17172b;
+    padding: 25px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.cabecalho h1 {
+    color: #ffcc33;
+    font-size: 26px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+    align-items: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #ffcc33;
+}
+
+button {
+    background-color: #ffcc33;
+    color: #17172b;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 25px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #ff8c42;
+    transform: scale(1.05);
+}
+
+/* BANNER INICIAL */
+.banner {
+    min-height: 550px;
+    padding: 70px 8%;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(120deg, #17172b, #302052);
+}
+
+.banner-conteudo {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 30px;
+    width: 100%;
+}
+
+.banner-conteudo > p:first-child {
+    color: #ffcc33;
+    font-size: 22px;
+    font-weight: bold;
+    grid-column: 1;
+}
+
+.banner-conteudo h1 {
+    font-size: 48px;
+    line-height: 1.2;
+    grid-column: 1;
+}
+
+.banner-conteudo > p:nth-of-type(2) {
+    font-size: 18px;
+    line-height: 1.7;
+    color: #dddddd;
+    grid-column: 1;
+}
+
+.banner-conteudo button {
+    width: fit-content;
+    grid-column: 1;
+}
+
+.banner-imagem {
+    grid-column: 2;
+    grid-row: 1 / 5;
+}
+
+.banner-imagem img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px #00000080;
+}
+
+/* SEÇÕES */
+.classicos,
+.personagens,
+.Hoje {
+    padding: 80px 8%;
+    text-align: center;
+}
+
+.sobre-cabecalho h2,
+.contato-cabecalho h2 {
+    font-size: 35px;
+    color: #ffcc33;
+    margin-bottom: 20px;
+}
+
+.sobre-cabecalho p,
+.contato-cabecalho p {
+    color: #bbbbbb;
+    margin-bottom: 25px;
+    line-height: 1.6;
+}
+
+.classicos > p,
+.personagens > p {
+    color: #dddddd;
+    margin: 20px auto 35px;
+    line-height: 1.6;
+}
+
+/* IMAGENS E PERSONAGENS */
+.classicos figure:last-child,
+.personagens figure:last-of-type {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.classicos figure:last-child img,
+.personagens figure:last-of-type img,
+.personagens > img {
+    width: 220px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 15px;
+    border: 3px solid #ffcc33;
+    transition: 0.3s;
+}
+
+.classicos figure:last-child img:hover,
+.personagens figure:last-of-type img:hover,
+.personagens > img:hover {
+    transform: scale(1.05);
+}
+
+/* LEGENDAS */
+.classicos figure p,
+.personagens figure p,
+.personagens > p {
+    color: #ffffff;
+    font-size: 17px;
+    line-height: 1.6;
+    font-weight: bold;
+}
+
+/* SEÇÃO HOJE */
+.Hoje {
+    background-color: #19192d;
+}
+
+.Hoje h3 {
+    color: #ff8c42;
+    font-size: 25px;
+    margin-top: 30px;
+}
+
+.Hoje p {
+    color: #dddddd;
+    margin-top: 10px;
+}
+
+/* SOBRE */
+.Sobre {
+    padding: 70px 20px;
+    background: linear-gradient(120deg, #302052, #17172b);
+    text-align: center;
+    border-radius: 20px;
+    margin: 30px 8%;
+}
+
+.Sobre h3 {
+    color: #ffcc33;
+    font-size: 55px;
+    margin: 20px;
+}
+
+.Sobre p {
+    color: white;
+    font-size: 18px;
+}
+
+/* RODAPÉ */
+footer {
+    background-color: #090912;
+    padding: 40px 8%;
+    text-align: center;
+}
+
+footer h3 {
+    color: #ffcc33;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+footer nav ul {
+    justify-content: center;
+    margin-bottom: 25px;
+}
+
+footer p {
+    color: #aaaaaa;
+    line-height: 1.7;
+    font-size: 14px;
+}
+
+/* RESPONSIVIDADE */
+@media (max-width: 768px) {
+
+    .cabecalho {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .banner-conteudo {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .banner-conteudo h1 {
+        font-size: 35px;
+    }
+
+    .banner-conteudo button {
+        margin: auto;
+    }
+
+    .banner-imagem img {
+        width: 100%;
+    }
+
+    .classicos,
+    .personagens,
+    .Hoje {
+        padding: 50px 5%;
+    }
+
+    .Sobre h3 {
+        font-size: 40px;
+    }
+}
