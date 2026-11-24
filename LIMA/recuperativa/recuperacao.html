@@ -1,88 +1,158 @@
+
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>recuperacao - avaliativa</title>
-</head>
-<body>
-    <header class="inicio">
-        <a href="#jogo"><h1>Festival de <span> Musica</span></h1></a>
 
+    <link rel="stylesheet" href="style.css">
+
+    <title>Music Festival</title>
+</head>
+
+<body>
+
+    <!-- CABEÇALHO -->
+    <header>
         <nav>
-            <ul class="navegacao">
-                <li><a href="#sobre">inicio</a></li>
-                <li><a href="#sobre">atracoes</a></li>
-                <li><a href="#sobre">programacao</a></li>
-                 <li><a href="#sobre">sobre</a></li>
+            <h2>Festival Music</h2>
+
+            <ul>
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#atracoes">Atrações</a></li>
+                <li><a href="#programacao">Programação</a></li>
+                <li><a href="#sobre">Sobre</a></li>
             </ul>
         </nav>
     </header>
 
+    <!-- BANNER PRINCIPAL -->
     <main>
-        <section class="conteudo-inicial">
-            <article class="conteudo-art">
+
+        <section id="inicio" class="banner">
+
+            <div class="banner-conteudo">
+                <h1>MUSICAS QUE TE MEXEM</h1>
+
+                <p>
+                    Descubra novos mundos atraves de musicas ou turnes dos maiores famosos.
+                </p>
+                <img src="https://tse2.mm.bing.net/th/id/OIP.vNdB9Nx6SJMDDmAjHnWnvgHaE8?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Festival">
+
+                <a href="#atracoes" class="botao">
+                    Explorar atrações
+                </a>
+            </div>
+
+        </section>
+
+        <!-- ATRAÇÕES -->
+        <section id="atracoes">
+
+            <h2>Nossas atrações</h2>
+
+            <p>Conheça as nossas maiores atrações.</p>
+
+            <div class="cards">
+
+                <article class="card">
+                    <img src="https://images.openai.com/static-rsc-4/og8evvrtF3JHxeUGo3I8JBnzXsCxOdQCWBjaqXfNksY_iCtHFV3bQLZRiHgUnNM9guvISLUsKwD_2NMOoLNV0wRlZHL8vLmw9eVdcUIHCVupyxaTyZ2HB7WfX2kC-uiug7SCbpe6SgsQ_DNG7AYu4WeEiWRBhh0fT6d_GhbfzkU5UOMMqkSz4fds42SHZyHb?purpose=fullsize"
+                        alt="Componentes eletrônicos">
+                    <h3>Matuê</h3>
+                </article>
+
+                <article class="card">
+                    <img src="https://images.openai.com/static-rsc-4/B7wmjPTD3IguynKLfpVwF4Yjtvwo47AHMwGxae9AMJv-DOmB7ekdTckAiqabSineusWkG8BBl1ZvAAMxXnw7PNYZVvqzAIaBAdZm2DByao7o2ZHv7ANDOJ6MJoyleSwnDgiXCdCyfBKF9zQPy4g4csZmftq_0jYHVkS3S0Cgn-wcdF0WBO1071_rpZya7HRU?purpose=fullsize"
+                        alt="Robô tecnológico">
+                    <h3>WIU</h3>
+                </article>
+
+                <article class="card">
+                    <img src="https://images.openai.com/static-rsc-4/0SwpeIOXFM0y2L5k4zrG4ORWCgvCFB_EAm1nSS4ECNrJCLLtf1k67GGe-vYfX6cHXbA5bUnEfW6nJq8bbPTyO5SuFDwvU875FIxG4K7Y1kwmLBS_-55g39kZ85eZ4Cbza-py2s9snVP4TJILkad6uVwsaHShzI9sIpoaq9LLUnNiajYKFTB6oTZtvF8KbmLq?purpose=fullsize"
+                        alt="Inteligência artificial">
+                    <h3>Veigh</h3>
+                </article>
+
+                <article class="card">
+                    <img src="https://images.openai.com/static-rsc-4/U7a4NtxkwfiOI53iZOfaV9Rp8J7wxx3bjfGAUHXqdqoFlE150XQ9Qu-Q0WtV70ZOmF67qREo4xmKNLErTa6JhFTK_wCPK71tZFTDTORK_xLTycMO9ViFj2OOyJWqmKRWWHIR5VCVTXAyXAlpAMDotf5BCBdDajO_E81OrdYf3hGvrcbkYJcw4FszFAI4GK4e?purpose=fullsize"
+                        alt="Energia sustentável">
+                    <h3>Orochi</h3>
+
+                </article>
+
+                <article class="card">
+                    <img src="https://images.openai.com/static-rsc-4/SNEKilGPtjsBA9X0_deWeuHuu7DuMLLWyJBbUlQxGa5vmqFOUuWRAg76--gz0Htt8YbMA6syyDdcJWqQ6xzzjVkwFngUqbchJ-o8ZF-lCiCVShyZnKdrz58kqEoe1KA-5_xB739mzPeQEFrjVls_erFK5dhUiQWyjwogd7m_edGzd0trhFUCPZxLW5hw_kRV?purpose=fullsize"
+                        alt="Pessoas trabalhando com tecnologia">
+                    <h3>KayBlack</h3>
+                </article>
+
+                <article class="card">
+                    <img src="https://images.openai.com/static-rsc-4/6Cih4DAMomEbVi9213UyDTxk_oui5og7YlKYkCJFPxau6msR5e_as-R0fmWkg-OSLChyHPK756w3uuJq5tt86oeS_w3au9Vj32WPY9dMmkVbFtATzt7q2UrL1cvO4bkkorEduQfP1zwuYTKizAPRACYEMMu6J0Q1KnyeY8NrcmzYbBgP4l7hFDjQvFt95aVE?purpose=fullsize"
+                        alt="Experiência tecnológica">
+                    <h3>Teto</h3>
+                </article>
+
+            </div>
+
+        </section>
+
+        <!-- PROGRAMAÇÃO -->
+        <section id="programacao">
+
+            <h2>Programação do evento</h2>
+
+            <div class="horarios">
+
+                <article>
+                    <h3>09:00</h3>
+                    <p>Abertura do festival</p>
+                </article>
+
+                <article>
+                    <h3>12:30</h3>
+                    <p>Inicio do primeiro show</p>
+                </article>
+
+                <article>
+                    <h3>17:00</h3>
+                    <p>Inicio da segundo show</p>
+                </article>
+
+                <article>
+                    <h3>4:30</h3>
+                    <p>Encerramento do festival</p>
+                </article>
+
+            </div>
+
+        </section>
+
+        <!-- SOBRE -->
+        <section id="sobre">
+
+            <h2>Sobre o Music Festival</h2>
+
+            <p>
                 Um festival de músicas reúne pessoas para celebrar diferentes estilos musicais, com shows ao vivo, diversão e apresentações de artistas, criando momentos especiais e inesquecíveis.
-            </article>
-            <figure class="cartao-img">
-                <img src="https://cdn.efestivals.co.uk/photos/misc_festivals/mint-festival-image.webp">
-                <figcaption>Festival mais famoso</figcaption>
-            </figure>
-            <button type="submit">Venha conheçer mais</button>
+            </p>
+
         </section>
 
-        <section class="galeria-conteudo">
-            <ul class="galeria-img">
-                <li>
-                    <figure class="gal-img">
-                        <img src="https://portalpopline.com.br/wp-content/uploads/2024/04/plantao-festival-transmissao-ao-vivo-primeiro-dia-jpg.webp" alt="Resident Evil 4">
-                        <figcaption>Matue</figcaption>
-                    </figure>
-                </li>
-
-                <li>
-                    <figure class="gal-img">
-                        <img src="https://s2-oglobo.glbimg.com/_AS_xo8w5Dph8m3KQCbE__A40qA=/1296x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_da025474c0c44edd99332dddb09cabe8/internal_photos/bs/2024/n/s/2Uj5OYSZenQaDZDdw0UQ/108462805-ri-rio-de-janeiro-13-09-2024-rock-in-rio-40-anos-show-ludmilla-no-palco-mundo.-fot.jpg" alt="Silent Hill 2 Remake">
-                        <figcaption>Ludimila</figcaption>
-                    </figure>
-                </li>
-
-                <li>
-                    <figure class="gal-img">
-                        <img src="https://portalpopline.com.br/wp-content/uploads/2024/05/anitta-dois-shows-festival-brasil-2024-ingressos-2-800x635.webp" alt="Phasmophobia">
-                        <figcaption>Anitta</figcaption>
-                    </figure>
-                </li>
-
-                <li>
-                    <figure class="gal-img">
-                        <img src="https://www.revistastile.com.br/wp-content/uploads/2022/12/link.jpeg-40-1-scaled.jpg" alt="Dead by Daylight">
-                        <figcaption>Felipe Ret</figcaption>
-                    </figure>
-                </li>
-
-                <li>
-                    <figure class="gal-img">
-                        <img src="https://billboard-com-br.s3.amazonaws.com/wp-content/uploads/2025/10/26143557/Veigh-no-primeiro-show-da-EVOM-Tour-foto-Marcos-Oliveira-%40marcosoliveirapht-2.jpeg" alt="The Outlast Trials">
-                        <figcaption>Veigh</figcaption>
-                    </figure>
-                </li>
-
-                <li>
-                    <figure class="gal-img">
-                        <img src="https://static.wixstatic.com/media/20653c_732a34bb6c444ab7894153207c37ba01~mv2.jpg/v1/fill/w_1000,h_667,al_c,q_85,usm_0.66_1.00_0.01/20653c_732a34bb6c444ab7894153207c37ba01~mv2.jpg" alt="Little Nightmares 3">
-                        <figcaption>Luan Santana</figcaption>
-                    </figure>
-                </li>
-                
-
-
-            </ul>
-        </section>
-
-    
     </main>
+
+    <!-- RODAPÉ -->
+    <footer id="contato">
+
+        <h2>Festival Music</h2>
+
+        <p>Contato: contato@Music.com.br</p>
+
+        <p>Telefone: (11) 99999-9999</p>
+
+        <p>Desenvolvido por Ana Francisca.</p>
+
+    </footer>
 
 </body>
 </html>
